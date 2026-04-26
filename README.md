@@ -1,4 +1,5 @@
-# Cythera Design System
+# ✨ Cythera 
+### A Stargazer's Design System
 
 A futuristic, accessible design system for modern web applications.
 Dual-theme (neon dark / pastel light), WCAG 2.2 AA+, and shipped with two parallel implementations.
