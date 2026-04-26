@@ -110,7 +110,7 @@
                       return (
                         <tr key={i}>
                           <td>{p.label}<div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--muted-foreground)' }}>{p.fg} on {p.bg}</div></td>
-                          <td><span style={{ background: p.bg, color: p.fg, padding: '4px 12px', borderRadius: 6, fontWeight: 600, border: '1px solid var(--border)' }}>Aa Sample</span></td>
+                          <td><span style={{ background: p.bg, color: p.fg, padding: '4px 12px', borderRadius: 6, fontWeight: 600, border: '1px solid var(--border)', whiteSpace: 'nowrap' }}>Aa Sample</span></td>
                           <td style={{ fontFamily: 'var(--font-mono)' }}>{r.toFixed(2)}:1</td>
                           <td><Badge variant={g.v}>{g.l}</Badge></td>
                         </tr>
