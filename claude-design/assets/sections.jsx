@@ -12,7 +12,7 @@ function TokensSection() {
   return (
     <section id="tokens" style={{ display: 'grid', gap: 24 }}>
       <SectionHeader kicker="01 / Foundations" title="Design Tokens" subtitle="Every visual decision in Cythera resolves to a CSS custom property. Themes swap by toggling a single .dark class on the root." />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
+      <div className="cy-section-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
         <Card>
           <CardHeader><CardTitle>Spacing scale</CardTitle><CardDescription>4 / 8 px rhythm. Stick to the scale.</CardDescription></CardHeader>
           <CardContent style={{ display: 'grid', gap: 10 }}>
@@ -57,7 +57,7 @@ function TypographySection() {
   return (
     <section id="type" style={{ display: 'grid', gap: 24 }}>
       <SectionHeader kicker="02 / Foundations" title="Typography" subtitle="Three families with distinct jobs. Display for impact, Sans for everything, Mono for technical data." />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
+      <div className="cy-section-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
         {[
           { fam: 'Orbitron', cssvar: '--font-display', role: 'Display & wordmark', sample: 'CYTHERA', style: { fontFamily: 'var(--font-display)', fontWeight: 800, letterSpacing: '4px', fontSize: 32 } },
           { fam: 'Rajdhani', cssvar: '--font-sans', role: 'UI & body', sample: 'The future of design', style: { fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: 24 } },
@@ -124,7 +124,7 @@ function ColorsSection({ darkMode }) {
       <SectionHeader kicker="03 / Foundations" title="Color System" subtitle="Two cohesive palettes—neon dark, pastel light. Every token meets WCAG AA+ on its mode." />
       <Card>
         <CardHeader><CardTitle>Cythera signature colors</CardTitle><CardDescription>The four-color brand palette. Contrast ratios shown are for text against the mode background.</CardDescription></CardHeader>
-        <CardContent style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 14 }}>
+        <CardContent className="cy-color-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 14 }}>
           {cyt.map((c) => (
             <div key={c.name} style={{ borderRadius: 10, overflow: 'hidden', border: '1px solid var(--border)' }}>
               <div style={{ height: 80, background: c.val, position: 'relative' }}>
@@ -144,7 +144,7 @@ function ColorsSection({ darkMode }) {
       </Card>
       <Card>
         <CardHeader><CardTitle>Semantic tokens</CardTitle><CardDescription>Functional roles—use these instead of literal colors.</CardDescription></CardHeader>
-        <CardContent style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12 }}>
+        <CardContent className="cy-semantic-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12 }}>
           {semantic.map((s) => (
             <div key={s} style={{ borderRadius: 8, padding: 12, background: `var(--${s})`, color: `var(--${s}-foreground)` }}>
               <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase' }}>{s}</div>
@@ -248,7 +248,7 @@ function ComponentsSection() {
         </CardContent>
       </Card>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
+      <div className="cy-section-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
         <Card>
           <CardHeader>
             <CardTitle>Badges</CardTitle>

@@ -161,7 +161,7 @@ function PatternForm() {
       <CardHeader><CardTitle>Settings form</CardTitle><CardDescription>Sectioned form with help text and choice cards.</CardDescription></CardHeader>
       <CardContent>
         <div style={{ display: 'grid', gap: 18, maxWidth: 560 }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          <div className="cy-form-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
             <div><Label>First name</Label><Input defaultValue="Elena" /></div>
             <div><Label>Last name</Label><Input defaultValue="Marquez" /></div>
           </div>
@@ -174,7 +174,7 @@ function PatternForm() {
           </div>
           <div>
             <Label>Plan</Label>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+            <div className="cy-form-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
               {['free', 'pro', 'enterprise'].map((p) => (
                 <button key={p} onClick={() => setPlan(p)} style={{
                   textAlign: 'left', padding: 12, borderRadius: 8, cursor: 'pointer',
@@ -255,7 +255,7 @@ function PatternShell() {
     <Card>
       <CardHeader><CardTitle>App shell</CardTitle><CardDescription>Sidebar + topbar + content. The bones of any Cythera app.</CardDescription></CardHeader>
       <CardContent>
-        <div style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 0, height: 360, border: '1px solid var(--border)', borderRadius: 10, overflow: 'hidden' }}>
+        <div className="cy-app-shell" style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 0, height: 360, border: '1px solid var(--border)', borderRadius: 10, overflow: 'hidden' }}>
           <aside style={{ background: 'var(--panel-dark)', borderRight: '1px solid var(--border)', padding: 14, display: 'flex', flexDirection: 'column', gap: 4 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, paddingBottom: 12, marginBottom: 8, borderBottom: '1px solid var(--border)' }}>
               <span className="cy-pulse-dot" />
@@ -300,7 +300,7 @@ function PatternShell() {
                 <Button size="sm"><Icon name="rocket" size={14} /> Deploy</Button>
               </div>
             </header>
-            <div style={{ padding: 18, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
+            <div className="cy-app-shell-stats" style={{ padding: 18, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
               {[
                 { l: 'Uptime', v: '99.98%', c: 'lime' },
                 { l: 'Requests/min', v: '8,421', c: 'cyan' },
@@ -330,7 +330,7 @@ function PatternsSection() {
       <PatternShell />
       <PatternDashboard />
       <PatternTable />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: 16 }}>
+      <div className="cy-section-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: 16 }}>
         <PatternForm />
         <PatternCommand />
       </div>

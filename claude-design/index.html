@@ -76,7 +76,7 @@
         <section id="a11y" style={{ display: 'grid', gap: 24 }}>
           <SectionHeader kicker="06 / Accessibility" title="A11y & Contrast" subtitle={`Live contrast audit for the ${dark ? 'dark' : 'light'} theme. Every text token meets WCAG 2.2 AA on its intended surface; most reach AAA.`} />
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
+          <div className="cy-section-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
             {[
               { i: 'check', t: 'WCAG 2.2 AA+', d: 'All text passes 4.5:1; most pass 7:1.' },
               { i: 'eye', t: 'Focus rings', d: '3 px ring at 50% --ring on every interactive control.' },
@@ -199,7 +199,7 @@
               <span style={{ width: 1, height: 28, background: 'var(--border)' }} />
               <span className="cy-tech-label">v1.0.0 // accessible</span>
             </div>
-            <nav style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+            <nav className="cy-header-nav" style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
               {['Tokens', 'Type', 'Color', 'Components', 'Patterns', 'A11y'].map((n) => (
                 <a key={n} href={`#${n.toLowerCase()}`} style={{
                   fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: 13,
