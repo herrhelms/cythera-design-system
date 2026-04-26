@@ -669,3 +669,72 @@ code, pre, kbd { font-family: var(--font-mono); font-size: var(--text-sm); }
   border-radius: 4px;
   padding: 1px 6px;
 }
+
+/* ===== mobile responsive (view-only showcase) ===== */
+@media (max-width: 768px) {
+  /* --- header: horizontal-scrolling nav --- */
+  .cy-header-nav {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+  .cy-header-nav::-webkit-scrollbar { display: none; }
+
+  /* --- hero: tighten top padding --- */
+  #root section:first-of-type {
+    padding-top: 40px !important;
+  }
+
+  /* --- main container: reduce padding --- */
+  main {
+    padding: 16px 12px 64px !important;
+  }
+
+  /* --- section grids: single column --- */
+  .cy-section-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- color grids: 2-col on mobile --- */
+  .cy-color-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .cy-semantic-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* --- cards: prevent viewport blowout --- */
+  .card {
+    max-width: calc(100vw - 24px);
+    overflow: hidden;
+  }
+
+  /* --- tables: ensure horizontal scroll works --- */
+  .card [style*="overflow: auto"],
+  .card [style*="overflow:auto"] {
+    max-width: 100%;
+  }
+
+  /* --- app shell pattern: stack vertically --- */
+  .cy-app-shell {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+  }
+  .cy-app-shell aside {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border);
+  }
+  .cy-app-shell-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- settings form: stack fields --- */
+  .cy-form-2col {
+    grid-template-columns: 1fr !important;
+  }
+  .cy-form-3col {
+    grid-template-columns: 1fr !important;
+  }
+}
