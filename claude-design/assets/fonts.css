@@ -1,0 +1,45 @@
+/* Brand fonts — local woff2 (Orbitron, Rajdhani) with Google Fonts for the rest. */
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('fonts/orbitron.woff2') format('woff2-variations'),
+       url('fonts/orbitron.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/rajdhani-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/rajdhani-medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/rajdhani-semibold.woff2') format('woff2');
+}
+
+/* Geist Mono and Share Tech Mono not in the brand bundle — Google Fonts fallback. */
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100;200;300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --font-sans: 'Rajdhani', system-ui, -apple-system, sans-serif;
+  --font-display: 'Orbitron', monospace, sans-serif;
+  --font-mono: 'Geist Mono', 'Courier New', monospace;
+  --font-tech: 'Share Tech Mono', 'Geist Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+}

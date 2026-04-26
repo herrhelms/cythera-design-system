@@ -1,0 +1,83 @@
+/* Shared styles for preview cards.
+   Each card: 700×N body, no border (registers chrome adds frame),
+   minimal padding, dark + light demo block side by side when relevant. */
+@import url('../colors_and_type.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: transparent;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 700px;
+  min-height: 150px;
+}
+
+.card.single { grid-template-columns: 1fr; }
+
+.pane {
+  padding: 20px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pane.light { background: #F8F9FE; color: #1A1F3A; }
+.pane.dark  { background: #0A0E1A; color: #E8ECF2; }
+
+/* atmospheric grid bg for dark panes */
+.pane.dark::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 200, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+.pane.light::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(125, 211, 252, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 211, 252, 0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.pane > * { position: relative; z-index: 1; }
+
+.eyebrow {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.col { display: flex; flex-direction: column; gap: 8px; }
+
+.swatch {
+  width: 100%;
+  aspect-ratio: 1.6 / 1;
+  border-radius: 6px;
+}
+.swatch-stack { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.swatch-label {
+  display: flex; flex-direction: column; gap: 2px; margin-top: 6px;
+}
+.swatch-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.swatch-hex {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px;
+  opacity: 0.6;
+}

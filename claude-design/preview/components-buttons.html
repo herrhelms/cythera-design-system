@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+.btn {
+  font-family: 'Rajdhani',sans-serif; font-weight:600; font-size:12px;
+  letter-spacing:1.5px; text-transform:uppercase;
+  padding:8px 20px; border-radius:6px; cursor:pointer;
+  transition: all .25s ease;
+}
+.btn-cyan-d { border:1px solid rgba(0,217,255,.35); background:rgba(0,217,255,.18); color:#00D9FF; }
+.btn-lime-d { border:1px solid rgba(179,255,107,.35); background:rgba(179,255,107,.18); color:#B3FF6B; }
+.btn-orange-d { border:1px solid rgba(255,122,71,.35); background:rgba(255,122,71,.18); color:#FF7A47; }
+.btn-cyan-l { border:1px solid rgba(59,130,246,.5); background:rgba(59,130,246,.2); color:#fff; }
+.btn-lime-l { border:1px solid rgba(34,197,94,.5); background:rgba(34,197,94,.2); color:#fff; }
+.btn-orange-l { border:1px solid rgba(245,158,11,.5); background:rgba(245,158,11,.2); color:#fff; }
+.hov-cyan-d:hover { background:rgba(0,217,255,.30); box-shadow:0 0 18px rgba(0,217,255,.28); transform:translateY(-2px); }
+</style></head>
+<body>
+<div class="card">
+  <div class="pane dark" style="padding:24px">
+    <div class="eyebrow" style="margin-bottom:14px">DARK · BUTTONS</div>
+    <div class="row">
+      <button class="btn btn-cyan-d hov-cyan-d">INITIALIZE</button>
+      <button class="btn btn-lime-d">ACTIVATE</button>
+      <button class="btn btn-orange-d">DEPLOY</button>
+    </div>
+  </div>
+  <div class="pane light" style="padding:24px">
+    <div class="eyebrow" style="margin-bottom:14px;color:#475569">LIGHT · BUTTONS</div>
+    <div class="row">
+      <button class="btn btn-cyan-l">INITIALIZE</button>
+      <button class="btn btn-lime-l">ACTIVATE</button>
+      <button class="btn btn-orange-l">DEPLOY</button>
+    </div>
+  </div>
+</div>
+</body></html>

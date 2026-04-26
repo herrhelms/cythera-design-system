@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Cythera Wordmark</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin:0; height:100%; }
+  body { background: var(--background); display:grid; place-items:center; gap:32px; }
+  .stage { display:grid; gap:32px; place-items:center; padding: 40px; }
+  .wordmark {
+    font-family: 'Orbitron', monospace;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 64px;
+    background: linear-gradient(90deg, var(--cythera-cyan), var(--cythera-lime));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .wordmark-sm { font-size: 24px; letter-spacing: 4px; }
+  .lockup { display:flex; align-items:center; gap:16px; }
+  .dot {
+    width:10px; height:10px; border-radius:50%;
+    background: var(--cythera-lime);
+    box-shadow: 0 0 12px rgba(var(--cythera-lime-rgb), .7);
+    animation: cythera-pulse 1.4s ease-in-out infinite;
+  }
+  .divider { width:1px; height:36px; background: var(--border-bright); }
+  .meta { color: var(--muted-foreground); }
+</style>
+</head>
+<body class="dark">
+  <div class="stage">
+    <div class="wordmark">Cythera</div>
+    <div class="lockup">
+      <div class="dot"></div>
+      <div class="wordmark wordmark-sm">Cythera</div>
+      <div class="divider"></div>
+      <span class="eyebrow">v1.0.0 // ACCESSIBLE</span>
+    </div>
+  </div>
+</body></html>

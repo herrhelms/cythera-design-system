@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-sans: 'Rajdhani', system-ui, -apple-system, sans-serif;
+  --font-display: 'Orbitron', monospace, sans-serif;
+  --font-mono: 'Geist Mono', 'Courier New', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+}
