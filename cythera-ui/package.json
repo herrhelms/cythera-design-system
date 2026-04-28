@@ -1,0 +1,17 @@
+{
+  "name": "cythera-ui",
+  "version": "0.1.0",
+  "description": "A shadcn-compatible component registry themed with the Cythera design system",
+  "license": "MIT",
+  "author": "herrhelms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herrhelms/cythera-design-system"
+  },
+  "keywords": ["shadcn", "ui", "components", "design-system", "cythera"],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "tailwindcss": ">=4"
+  }
+}
