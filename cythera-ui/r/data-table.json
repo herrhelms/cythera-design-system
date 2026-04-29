@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "data-table",
+  "type": "registry:ui",
+  "title": "Data Table",
+  "description": "Powerful table and datagrids built using TanStack Table.",
+  "dependencies": [
+    "@tanstack/react-table"
+  ],
+  "registryDependencies": [
+    "table"
+  ],
+  "files": [
+    {
+      "path": "components/ui/data-table.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

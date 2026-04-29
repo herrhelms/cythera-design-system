@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar",
+  "type": "registry:ui",
+  "title": "Sidebar",
+  "description": "A composable, themeable sidebar component with collapsible navigation.",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "separator",
+    "sheet",
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "components/ui/sidebar.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

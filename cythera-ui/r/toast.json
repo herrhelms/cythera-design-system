@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toast",
+  "type": "registry:ui",
+  "title": "Toast",
+  "description": "A succinct message that is displayed temporarily.",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "components/ui/toast.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

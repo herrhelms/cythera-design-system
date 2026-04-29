@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs",
+  "type": "registry:ui",
+  "title": "Tabs",
+  "description": "A set of layered sections of content \u2014 known as tab panels \u2014 that are displayed one at a time.",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "components/ui/tabs.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

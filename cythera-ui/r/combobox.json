@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "combobox",
+  "type": "registry:ui",
+  "title": "Combobox",
+  "description": "Autocomplete input and command palette with a list of suggestions.",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "command",
+    "popover"
+  ],
+  "files": [
+    {
+      "path": "components/ui/combobox.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

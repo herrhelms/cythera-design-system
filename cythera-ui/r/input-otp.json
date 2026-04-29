@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-otp",
+  "type": "registry:ui",
+  "title": "Input OTP",
+  "description": "Accessible one-time password input with copy paste functionality.",
+  "dependencies": [
+    "input-otp"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "components/ui/input-otp.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "item",
+  "type": "registry:ui",
+  "title": "Item",
+  "description": "A generic list item component with consistent styling and layout.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "components/ui/item.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar",
+  "type": "registry:ui",
+  "title": "Calendar",
+  "description": "A date field component that allows users to enter and edit date.",
+  "dependencies": [
+    "react-day-picker"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "components/ui/calendar.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "drawer",
+  "type": "registry:ui",
+  "title": "Drawer",
+  "description": "A drawer component for React built on top of Vaul.",
+  "dependencies": [
+    "vaul"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "components/ui/drawer.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

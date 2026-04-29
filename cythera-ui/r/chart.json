@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chart",
+  "type": "registry:ui",
+  "title": "Chart",
+  "description": "Beautiful charts built using Recharts.",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "components/ui/chart.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}
